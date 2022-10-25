@@ -65,6 +65,9 @@
 
             let newTask = document.createElement("div");
             newTask.classList.add("task", "bg-light", "p-1", "rounded-2", "ps-2");
+            newTask.addEventListener("click", () => {
+                newTask.remove();
+            })
             newTask.textContent = task;
 
             let todoList = document.querySelector("#todo-list");
